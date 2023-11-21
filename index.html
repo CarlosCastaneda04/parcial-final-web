@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concesionario de Carros</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.css">
+
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">iCar Plus</a>
+            <a href="nosotros.html">Sobre Nosotros</a>
+            <div class="right-section">
+                <a href="contactanos.html" class="contact-button">Contáctanos</a>
+            </div>
+        </nav>
+    </header>
+    <div id="all-cars-carousel" class="carousel">
+        
+    </div>
+    <div id="marcaFiltro-container">
+        <label for="marcaFiltro">Filtrar por Marca:</label>
+        <select id="marcaFiltro">
+            <option value="todas">Todas las Marcas</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Honda">Honda</option>
+            <option value="Ford">Ford</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Nissan">Nissan</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Volkswagen">Volkswagen</option>
+            <option value="Mazda">Mazda</option>
+            <option value="Kia">Kia</option>
+            <option value="Subaru">Subaru</option>
+            <option value="Tesla">Tesla</option>
+        </select>
+    </div>
+
+    <section id="car-list">
+        <!-- Aquí se mostrarán los carros -->
+    </section>
+
+    <div id="car-details">
+        <!-- Aquí se mostrarán los detalles -->
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
