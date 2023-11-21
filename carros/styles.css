@@ -1,0 +1,248 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Agregamos un fondo gris claro */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Cambia el color al pasar el mouse sobre el enlace */
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Estilos para el logotipo del concesionario en la barra de navegación */
+nav .logo {
+    float: left;
+    display: block;
+    padding: 15px;
+}
+
+/* Estilos para la sección derecha de la barra de navegación */
+nav .right-section {
+    float: right;
+}
+
+/* Estilos para el botón de contacto */
+nav .contact-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Cambia el color al pasar el mouse sobre el botón de contacto */
+nav .contact-button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para centrar el filtro */
+#marcaFiltro-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos para el menú desplegable */
+label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+select {
+    padding: 8px;
+    font-size: 16px;
+}
+#car-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.carro {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+.carro:hover {
+    transform: scale(1.05);
+}
+
+/* Establece un tamaño fijo para las imágenes */
+.carro img {
+    width: 300px; 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+/* Estilos para el botón "Ver Detalles" */
+.carro button {
+    background-color: #4c4e4c; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 4px; 
+    transition: background-color 0.3s;
+}
+
+/* Cambia el color de fondo del botón al pasar el ratón */
+.carro button:hover {
+    background-color: #a06945;
+}
+
+/* Agrega una animación al botón */
+/* Agrega una animación al botón con efecto "bounce" */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.carro button.bounce {
+    animation: bounce 1s; /* Aplica la animación durante 1 segundo */
+}
+
+
+.panel {
+    background-color: rgba(142, 139, 139, 0.7); /* Color de fondo del panel con transparencia */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor del panel */
+    text-align: center;
+
+}
+
+/* Estilos para el formulario */
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los campos del formulario */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: calc(100% - 12px);
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+/* Estilos para el botón de enviar */
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+
+/* Estilos para la sección de Información de Contacto */
+.contact-info {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    color: #333;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
